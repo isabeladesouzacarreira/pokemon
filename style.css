@@ -1,35 +1,123 @@
 *{
-
-   margin: 0; 
-   box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background: color #efeff2; ; 
+    background-color: #EFEFF2;
 }
+
 h1{
-
-    color:rgb(51, 51, 90);
-    font-size: 90px;
-    text-align:center;
+    color: #01A1A1;
+    font-size: 96px;
+    text-align: center;
 }
-
-
 .poppins-bold {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-
 .poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .card{
-width: 320px;
-border-radius: 30px;
-padding: 20px;
-box-shadow: 12px 12px 24px 0px #d1d5db,-12px -12px 24px 0px ffffff;
-background-color: azure;
-  }
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card{
+    width: 320px;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 12px 12px 24px 0px #d1d5db,-12px -12px 24px 0px #ffffff;
+    background-color:rgb(204, 221, 206);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar-container{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius:50%;
+    background-color: #d1d5db;
+    box-shadow: 12px 12px 24 px 0px #d1d5db, 12px 12px 24px 0px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.aro-avatar{
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    border-radius: 50%;
+    border:12px solid transparent;
+    transform: rotate(30deg);
+}
+
+.card.planta .aro-avatar{
+    border-bottom-color: #68c772;
+    border-left-color: #68c772;
+    border-top-color: #68c772;
+}
+.card.agua .aro-avatar{
+    border-bottom-color: #48bbeb;
+    border-left-color: #48bbeb;
+    border-top-color: #48bbeb;
+}
+.card.fogo .aro-avatar{
+    border-bottom-color: #f17f1a;
+    border-left-color: #f17f1a;
+    border-top-color: #f17f1a;
+}
+.card.eletrico .aro-avatar{
+    border-bottom-color: #ffd506;
+    border-left-color: #ffd506;
+    border-top-color: #ffd506;
+}
+
+.avatar-container img{
+    width: 120px;
+    height: 120px;
+    filter: drop-shadow(0 10px 10pc rgba(0,0,0,0.15));
+}
+
+.none-pokemon{
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 0.2rem;
+}
+.tipo-pokemon{
+    font-size: 0.9rem;
+    color: #6b7280;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+
+.lista-estatistica{
+width: ;
+}
+
+.barra-estatistica{
+    height: 10px;
+    background-color: #EFEFF2;
+    border-radius:10px ;
+    box-shadow: inset 4px 4px 8px 0px rgba(0,0,0,0.1),inset -4px -4px 8px 0px #ffffff;
+}
+
+.card.agua .barra-preenchimento{
+background-color:rgb(159, 184, 253) ;
+box-shadow: 2px 0 5px rgb(163, 221, 209) ;
+}
+.card.card.fogo.barra-preenchimento{
+    background-color:rgb(253, 128, 69) ;
+    box-shadow: 2px 0 5px rgb(221, 191, 163) ;
+    }
+.card.card.eletrico.barra-preenchimento{
+        background-color:rgb(251, 253, 159) ;
+        box-shadow: 2px 0 5px rgb(221, 217, 163) ;
+        }  
+        .card.card.planta.barra-preenchimento{
+            background-color:rgb(196, 253, 159) ;
+            box-shadow: 2px 0 5px rgb(80, 221, 104) ;
+            }
